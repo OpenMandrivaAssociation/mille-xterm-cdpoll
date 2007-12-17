@@ -9,7 +9,6 @@ Group:		System/Servers
 URL:		http://www.revolutionlinux.com/mille-xterm
 Source:		mille-xterm-cdpoll-%{version}.tar.bz2
 BuildRequires:	python-devel
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 This program checks if there's a CD in the drive.
