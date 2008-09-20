@@ -3,13 +3,14 @@
 Summary:	Local CDROM polling for the MILLE-XTERM project
 Name:		mille-xterm-cdpoll
 Version:	1.0
-Release:	%mkrel 0.%{svn}.1
+Release:	%mkrel 0.%{svn}.2
 License:	GPL
 Group:		System/Servers
 URL:		http://www.revolutionlinux.com/mille-xterm
 Source:		mille-xterm-cdpoll-%{version}.tar.bz2
+Patch0:		mille-xterm-cdpoll-INT_MAX_fix.diff
 BuildRequires:	python-devel
-BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This program checks if there's a CD in the drive.
@@ -17,6 +18,7 @@ This program checks if there's a CD in the drive.
 %prep
 
 %setup -q
+%patch0 -p0
 
 %build 
 
@@ -35,5 +37,3 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc AUTHORS Changelog COPYING INSTALL README
 /sbin/cdpoll
-
-
