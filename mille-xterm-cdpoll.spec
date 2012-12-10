@@ -37,3 +37,33 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc AUTHORS Changelog COPYING INSTALL README
 /sbin/cdpoll
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 1.0-0.2137.4mdv2011.0
++ Revision: 620330
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 1.0-0.2137.3mdv2010.0
++ Revision: 430029
+- rebuild
+
+* Sat Sep 20 2008 Oden Eriksson <oeriksson@mandriva.com> 1.0-0.2137.2mdv2009.0
++ Revision: 286102
+- fix build
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 1.0-0.2137.1mdv2008.1
++ Revision: 136579
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Thu Feb 08 2007 Oden Eriksson <oeriksson@mandriva.com> 1.0-0.2137.1mdv2007.0
++ Revision: 117764
+- Import mille-xterm-cdpoll
+
+* Fri Sep 29 2006 Oden Eriksson <oeriksson@mandriva.com> 1.0-0.2137.1mdk
+- initial Mandriva package (mille-xterm import)
+
