@@ -6,7 +6,7 @@ Version:	1.0
 Release:	%mkrel 0.%{svn}.4
 License:	GPL
 Group:		System/Servers
-URL:		http://www.revolutionlinux.com/mille-xterm
+URL:		https://www.revolutionlinux.com/mille-xterm
 Source:		mille-xterm-cdpoll-%{version}.tar.bz2
 Patch0:		mille-xterm-cdpoll-INT_MAX_fix.diff
 BuildRequires:	python-devel
